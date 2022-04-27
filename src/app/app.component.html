@@ -1,0 +1,22 @@
+<div class="container" *ngIf="response$ | async as response">
+	<div class="salat">
+		<div class="name">Fajr</div>
+		<div class="time">{{ response.data.timings.Fajr }}</div>
+	</div>
+	<div class="salat">
+		<div class="name">Dhuhr</div>
+		<div class="time">{{ response.data.timings.Dhuhr }}</div>
+	</div>
+	<div class="salat">
+		<div class="name">Asr </div>
+		<div class="time">{{ response.data.timings.Asr }}</div>
+	</div>
+	<div class="salat">
+		<div class="name">Maghrib </div>
+		<div class="time">{{ response.data.timings.Maghrib }}</div>
+	</div>
+	<div class="salat">
+		<div class="name">Isha </div>
+		<div class="time">{{ response.data.timings.Isha }}</div>
+	</div>
+</div>
